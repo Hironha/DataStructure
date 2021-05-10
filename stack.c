@@ -105,7 +105,7 @@ void main(int argc, char **argv){
   void (*options[5])(no **) = {inserirValor, retirarValor, valorTopo, imprimirPilha, sairPilha};
   while(opc != -1){
     opc = menu();
-    if(opc > 0 && opc <= 5){
+    if(opc > 0 && opc < 6){
       (*options[opc-1])(&pilha);
     }else{
       fprintf(stdout, "Opcao invalida.\n");
